@@ -1,0 +1,1974 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Exercise Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 1, 2024 07:03:28 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 1, 2024 07:03:28 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 1, 2024 07:06:52 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>6</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='60%'>
+<b>6</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='40%'><b>4</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='61%'><b>8</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='38%'><b>5</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='84%'><b>66</b> steps passed</small></div>
+<div>
+<small data-tooltip='6%'><b>5</b> steps failed,
+<b>7</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Brand Functionality-------->Contains----->TC19":109.484,"Cart Functionality------------>Contains---------->TC12,TC13,TC17,TC20,TC22":16.945,"Category Functionality'-------->Contains ------->TC18":13.812,"Checkout Functionality---------->Contains------->TC14,TC15,TC16,TC23,TC24":5.029,"Contact Us Functionality--------------->Contains-------->TC6":26.035,"Login Functionality ------------>contains-------------->TC2, TC3, TC4":5.115,"Navigation Functionality------>Contains------>TC25,TC26":11.07,"Products Functionality -------->Contains TC8,TC9, TC21":4.146,"Register User ------------> Contains------------>TC1, TC5":6.155,"--------------->Contains------------>TC7":5.181
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@smoke</td>
+<td>8</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>61.538%</td>
+</tr>
+<tr>
+<td>@sanity</td>
+<td>8</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>61.538%</td>
+</tr>
+<tr>
+<td>@author_Annapoorna</td>
+<td>8</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>61.538%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>8</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>61.538%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Annapoorna Somayaji</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>Automation Exercise</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 6,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 8,
+failChild: 5,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 66,
+failGrandChild: 5,
+warningGrandChild: 0,
+skipGrandChild: 7,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@author_Annapoorna</a><a class="dropdown-item" href="#">@regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Brand Functionality-------->Contains----->TC19</p>
+            <p class="text-sm">
+              <span>19:03:28</span> / <span>00:01:49:484</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Brand Functionality-------->Contains----->TC19</h5>
+<span class='badge badge-success'>01.01.2024 19:03:28</span>
+<span class='badge badge-danger'>01.01.2024 19:05:18</span>
+<span class='badge badge-default'>00:01:49:484</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I like to be able to check out different brands</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User should be able to view brands on the left side panel and choose different brands</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>User should be able to view brands on the left side panel and choose different brands</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click on " Products" from the top navigation bar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "BRANDS" in the heading</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I select a brand from sheet name "Sheet1" and row number "0"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then I should see brand name from sheet name "Sheet1" and row number "0" in the heading</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [BRAND - POLO PRODUCTS] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at com.automationexercise.steps.BrandTestStepDefinition.iShouldSeeBrandNameFromSheetNameAndRowNumberInTheHeading(BrandTestStepDefinition.java:47)
+	at ✽.I should see brand name from sheet name "Sheet1" and row number "0" in the heading(file:///C:/Users/annus/IdeaProjects/automation-exercise-cucumber/src/test/resources/features/brand.feature:12)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I should see brand products are displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I click on another brand "BABYHUG"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I should see "BRAND - BABYHUG PRODUCTS" in the heading</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I should see brand products are displayed</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User should be able to view brands on the left side panel and choose different brands
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>User should be able to view brands on the left side panel and choose different brands</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click on " Products" from the top navigation bar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "BRANDS" in the heading</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I select a brand from sheet name "Sheet1" and row number "1"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see brand name from sheet name "Sheet1" and row number "1" in the heading</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should see brand products are displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click on another brand "BABYHUG"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "BRAND - BABYHUG PRODUCTS" in the heading</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should see brand products are displayed</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>User should be able to view brands on the left side panel and choose different brands</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click on " Products" from the top navigation bar</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "BRANDS" in the heading</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I select a brand from sheet name "Sheet1" and row number "2"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see brand name from sheet name "Sheet1" and row number "2" in the heading</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should see brand products are displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I click on another brand "BABYHUG"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see "BRAND - BABYHUG PRODUCTS" in the heading</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I should see brand products are displayed</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Cart Functionality------------>Contains---------->TC12,TC13,TC17,TC20,TC22</p>
+            <p class="text-sm">
+              <span>19:05:18</span> / <span>00:00:16:945</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Cart Functionality------------>Contains---------->TC12,TC13,TC17,TC20,TC22</h5>
+<span class='badge badge-success'>01.01.2024 19:05:18</span>
+<span class='badge badge-danger'>01.01.2024 19:05:35</span>
+<span class='badge badge-default'>00:00:16:945</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I would like to be able to add products and remove them and checkout</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="40"><span class="badge log fail-bg mr-2">Fail</span>User is able to add products to cart</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iClickOnFromTheTopNavigationBar(java.lang.String)">
+                <span>When I click on " Products" from the top navigation bar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.CartTestStepDefinition.iAddItemToCartContinueShopping(java.lang.String)">
+                <span>And I add "1st" item to cart continue shopping</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.CartTestStepDefinition.iAddItemToCart(java.lang.String)">
+                <span>And I add "2nd" item to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.CartTestStepDefinition.iAmAbleToSeeTheRightProductsWithProductNamePriceQuantityAndTotalPriceInTheCart(io.cucumber.datatable.DataTable)">
+                <span>Then I am able to see the right products with product name , price , quantity and total price in the cart</span>
+      <div><table class='markup-table table '><tr><td>Blue Top</td><td>Rs. 500</td><td>1</td><td>Rs. 500</td></tr><tr><td>Men Tshirt</td><td>Rs. 400</td><td>1</td><td>Rs. 400</td></tr></table>
+      </div>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Product in the cart does not match: Lists differ at element [0]: Blue Top != Men Tshirt expected [Blue Top] but found [Men Tshirt]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1644)
+	at com.automationexercise.steps.CartTestStepDefinition.iAmAbleToSeeTheRightProductsWithProductNamePriceQuantityAndTotalPriceInTheCart(CartTestStepDefinition.java:60)
+	at ✽.I am able to see the right products with product name , price , quantity and total price in the cart(file:///C:/Users/annus/IdeaProjects/automation-exercise-cucumber/src/test/resources/features/cart.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User is able to add products to cart
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Category Functionality'-------->Contains ------->TC18</p>
+            <p class="text-sm">
+              <span>19:05:35</span> / <span>00:00:13:812</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Category Functionality'-------->Contains ------->TC18</h5>
+<span class='badge badge-success'>01.01.2024 19:05:35</span>
+<span class='badge badge-danger'>01.01.2024 19:05:49</span>
+<span class='badge badge-default'>00:00:13:812</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I like to be able to browse through different categories pf products</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="49"><span class="badge log fail-bg mr-2">Fail</span>The user should see the category panel on left side of the page and can choose different categories</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iShouldSeeInTheHeading(java.lang.String)">
+                <span>Then I should see "CATEGORY" in the heading</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.CategoryTestStepDefinition.iSelectTheCategory(java.lang.String)">
+                <span>When I select the "Women" category</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.CategoryTestStepDefinition.iSelectTheSubCategory(java.lang.String)">
+                <span>And I select the sub category "Dress"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iShouldSeeInTheHeading(java.lang.String)">
+                <span>Then I should see "WOMEN - DRESS PRODUCTS" in the heading</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: User not navigated to Login page page. expected [WOMEN - DRESS PRODUCTS] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.automationexercise.steps.RegisterTestStepDefinition.iShouldSeeInTheHeading(RegisterTestStepDefinition.java:47)
+	at ✽.I should see "WOMEN - DRESS PRODUCTS" in the heading(file:///C:/Users/annus/IdeaProjects/automation-exercise-cucumber/src/test/resources/features/category.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.CategoryTestStepDefinition.iSelectTheCategory(java.lang.String)">
+                <span>When I select the "Men" category</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.CategoryTestStepDefinition.iSelectTheSubCategory(java.lang.String)">
+                <span>And I select the sub category "TShirts"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.automationexercise.steps.CategoryTestStepDefinition.iCanSeeInBreadcrumb(java.lang.String)">
+                <span>Then I can see "Men > Jeans" in breadcrumb</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>The user should see the category panel on left side of the page and can choose different categories
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded3.png' src="../screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Checkout Functionality---------->Contains------->TC14,TC15,TC16,TC23,TC24</p>
+            <p class="text-sm">
+              <span>19:05:49</span> / <span>00:00:05:029</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Checkout Functionality---------->Contains------->TC14,TC15,TC16,TC23,TC24</h5>
+<span class='badge badge-success'>01.01.2024 19:05:49</span>
+<span class='badge badge-danger'>01.01.2024 19:05:54</span>
+<span class='badge badge-default'>00:00:05:029</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I like to be able to checkout after adding items to cart</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>User is able to add products to cart and checkout</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.CartTestStepDefinition.iAddItemToCart(java.lang.String)">
+                <span>When I add "2nd" item to cart</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(java.lang.String)">
+                <span>Then I can view "Cart" tab is selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="67"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Contact Us Functionality--------------->Contains-------->TC6</p>
+            <p class="text-sm">
+              <span>19:05:54</span> / <span>00:00:26:035</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Contact Us Functionality--------------->Contains-------->TC6</h5>
+<span class='badge badge-success'>01.01.2024 19:05:54</span>
+<span class='badge badge-danger'>01.01.2024 19:06:20</span>
+<span class='badge badge-default'>00:00:26:035</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I would like to be able to get in touch with the company using the contact us form</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="68"><span class="badge log fail-bg mr-2">Fail</span>User is able to submit the contact us for successfully</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ContactUsTestStepDefinition.iAmOnPageAndVanViewHeading(java.lang.String,java.lang.String)">
+                <span>Given I am on "Contact us" page and van view "GET IN TOUCH" heading</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ContactUsTestStepDefinition.iProvideInformationOnTheFormAndSubmit(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>When I provide information "Annu", "annusom@gmail.com", "Refund request", "Please refund my order no 345", "C:\Users\annus\Desktop\contact.txt" on the form and submit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ContactUsTestStepDefinition.iShouldBeAbleToViewTheSuccessMessage(java.lang.String)">
+                <span>Then I should be able to view the success message "Success! Your details have been submitted successfully."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ContactUsTestStepDefinition.iClickOnHomeButton()">
+                <span>When I click on Home button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(java.lang.String)">
+                <span>Then I can view "Home" tab is selected</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(RegisterTestStepDefinition.java:32)
+	at ✽.I can view "Home" tab is selected(file:///C:/Users/annus/IdeaProjects/automation-exercise-cucumber/src/test/resources/features/contactus.feature:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User is able to submit the contact us for successfully
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded4.png' src="../screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="77"><span class="badge log fail-bg mr-2">Fail</span>User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ContactUsTestStepDefinition.iAmOnPageAndVanViewHeading(java.lang.String,java.lang.String)">
+                <span>Given I am on "Contact us" page and van view "GET IN TOUCH" heading</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ContactUsTestStepDefinition.iProvideInformationAndSubmit(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>When I provide information "Annu", "annusom@gmail.com", "Refund request", "Please refund my order no 345", "C:\Users\annus\Desktop\contact.txt" and submit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ContactUsTestStepDefinition.iShouldBeAbleToViewTheSuccessMessage(java.lang.String)">
+                <span>Then I should be able to view the success message "Success! Your details have been submitted successfully."</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.ContactUsTestStepDefinition.iClickOnHomeButton()">
+                <span>When I click on Home button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(java.lang.String)">
+                <span>Then I can view "Home" tab is selected</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(RegisterTestStepDefinition.java:32)
+	at ✽.I can view "Home" tab is selected(file:///C:/Users/annus/IdeaProjects/automation-exercise-cucumber/src/test/resources/features/contactus.feature:23)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.automationexercise.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded5.png' src="../screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="86"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality ------------>contains-------------->TC2, TC3, TC4</p>
+            <p class="text-sm">
+              <span>19:06:20</span> / <span>00:00:05:115</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality ------------>contains-------------->TC2, TC3, TC4</h5>
+<span class='badge badge-success'>01.01.2024 19:06:20</span>
+<span class='badge badge-danger'>01.01.2024 19:06:25</span>
+<span class='badge badge-default'>00:00:05:115</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=86</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I would like to login by providing valid credentials</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="87"><span class="badge log pass-bg mr-2">Pass</span>User should be on Home page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iObserveTheHomepage()">
+                <span>When I observe the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(java.lang.String)">
+                <span>Then I can view "Home" tab is selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="93"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Navigation Functionality------>Contains------>TC25,TC26</p>
+            <p class="text-sm">
+              <span>19:06:25</span> / <span>00:00:11:070</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Navigation Functionality------>Contains------>TC25,TC26</h5>
+<span class='badge badge-success'>01.01.2024 19:06:25</span>
+<span class='badge badge-danger'>01.01.2024 19:06:36</span>
+<span class='badge badge-default'>00:00:11:070</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=93</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I would like to navigate easily using page navigation features</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="94"><span class="badge log pass-bg mr-2">Pass</span>User should be able to scroll up and down using page navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(java.lang.String)">
+                <span>Then I can view "Home" tab is selected</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.SubscriptionTestStepDefinition.iScrollDownToTheFooterAndVerifyTheHeading()">
+                <span>When I scroll down to the footer and verify the heading</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iShouldSeeInTheHeading(java.lang.String)">
+                <span>Then I should see "SUBSCRIPTION" in the heading</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.PageNavigationTestStepDefinition.iClickOnScrollUpArrow()">
+                <span>When I click on scroll up arrow</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.PageNavigationTestStepDefinition.iShouldSeeInTheCarouselHeading(java.lang.String)">
+                <span>Then I should see "Full-Fledged practice website for Automation Engineers" in the carousel heading</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="103"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Products Functionality -------->Contains TC8,TC9, TC21</p>
+            <p class="text-sm">
+              <span>19:06:36</span> / <span>00:00:04:146</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Products Functionality -------->Contains TC8,TC9, TC21</h5>
+<span class='badge badge-success'>01.01.2024 19:06:36</span>
+<span class='badge badge-danger'>01.01.2024 19:06:40</span>
+<span class='badge badge-default'>00:00:04:146</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=103</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I like to be able to view all products and click on individual product, submit a review</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="104"><span class="badge log pass-bg mr-2">Pass</span>User should be on Home page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iObserveTheHomepage()">
+                <span>When I observe the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(java.lang.String)">
+                <span>Then I can view "Home" tab is selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="110"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register User ------------> Contains------------>TC1, TC5</p>
+            <p class="text-sm">
+              <span>19:06:40</span> / <span>00:00:06:155</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register User ------------> Contains------------>TC1, TC5</h5>
+<span class='badge badge-success'>01.01.2024 19:06:40</span>
+<span class='badge badge-danger'>01.01.2024 19:06:46</span>
+<span class='badge badge-default'>00:00:06:155</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=110</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I would like to register, create account and delete it</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="111"><span class="badge log pass-bg mr-2">Pass</span>User should be on Home page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iObserveTheHomepage()">
+                <span>When I observe the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(java.lang.String)">
+                <span>Then I can view "Home" tab is selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="117"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">--------------->Contains------------>TC7</p>
+            <p class="text-sm">
+              <span>19:06:46</span> / <span>00:00:05:181</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">--------------->Contains------------>TC7</h5>
+<span class='badge badge-success'>01.01.2024 19:06:46</span>
+<span class='badge badge-danger'>01.01.2024 19:06:52</span>
+<span class='badge badge-default'>00:00:05:181</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=117</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> As a user, I like to navigate to test cases page</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="118"><span class="badge log pass-bg mr-2">Pass</span>User should be on Home page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iNavigatedToHomepage()">
+                <span>Given I navigated to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iObserveTheHomepage()">
+                <span>When I observe the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.automationexercise.steps.RegisterTestStepDefinition.iCanViewTabIsSelected(java.lang.String)">
+                <span>Then I can view "Home" tab is selected</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:03:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='39' id='40'>User is able to add products to cart</a>
+<div class="">
+<span class="badge badge-default">Cart Functionality------------>Contains---------->TC12,TC13,TC17,TC20,TC22.User is able to add products to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='49'>The user should see the category panel on left side of the page and can choose different categories</a>
+<div class="">
+<span class="badge badge-default">Category Functionality'-------->Contains ------->TC18.The user should see the category panel on left side of the page and can choose different categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:05:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='60' id='61'>User is able to add products to cart and checkout</a>
+<div class="">
+<span class="badge badge-default">Checkout Functionality---------->Contains------->TC14,TC15,TC16,TC23,TC24.User is able to add products to cart and checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='68'>User is able to submit the contact us for successfully</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:06:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='77'>User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='87'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality ------------>contains-------------->TC2, TC3, TC4.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='93' id='94'>User should be able to scroll up and down using page navigation</a>
+<div class="">
+<span class="badge badge-default">Navigation Functionality------>Contains------>TC25,TC26.User should be able to scroll up and down using page navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='103' id='104'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Products Functionality -------->Contains TC8,TC9, TC21.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='110' id='111'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Register User ------------> Contains------------>TC1, TC5.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='117' id='118'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">--------------->Contains------------>TC7.User should be on Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:03:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='39' id='40'>User is able to add products to cart</a>
+<div class="">
+<span class="badge badge-default">Cart Functionality------------>Contains---------->TC12,TC13,TC17,TC20,TC22.User is able to add products to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='49'>The user should see the category panel on left side of the page and can choose different categories</a>
+<div class="">
+<span class="badge badge-default">Category Functionality'-------->Contains ------->TC18.The user should see the category panel on left side of the page and can choose different categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:05:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='60' id='61'>User is able to add products to cart and checkout</a>
+<div class="">
+<span class="badge badge-default">Checkout Functionality---------->Contains------->TC14,TC15,TC16,TC23,TC24.User is able to add products to cart and checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='68'>User is able to submit the contact us for successfully</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:06:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='77'>User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='87'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality ------------>contains-------------->TC2, TC3, TC4.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='93' id='94'>User should be able to scroll up and down using page navigation</a>
+<div class="">
+<span class="badge badge-default">Navigation Functionality------>Contains------>TC25,TC26.User should be able to scroll up and down using page navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='103' id='104'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Products Functionality -------->Contains TC8,TC9, TC21.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='110' id='111'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Register User ------------> Contains------------>TC1, TC5.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='117' id='118'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">--------------->Contains------------>TC7.User should be on Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@author_Annapoorna</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@author_Annapoorna</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:03:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='39' id='40'>User is able to add products to cart</a>
+<div class="">
+<span class="badge badge-default">Cart Functionality------------>Contains---------->TC12,TC13,TC17,TC20,TC22.User is able to add products to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='49'>The user should see the category panel on left side of the page and can choose different categories</a>
+<div class="">
+<span class="badge badge-default">Category Functionality'-------->Contains ------->TC18.The user should see the category panel on left side of the page and can choose different categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:05:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='60' id='61'>User is able to add products to cart and checkout</a>
+<div class="">
+<span class="badge badge-default">Checkout Functionality---------->Contains------->TC14,TC15,TC16,TC23,TC24.User is able to add products to cart and checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='68'>User is able to submit the contact us for successfully</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:06:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='77'>User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='87'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality ------------>contains-------------->TC2, TC3, TC4.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='93' id='94'>User should be able to scroll up and down using page navigation</a>
+<div class="">
+<span class="badge badge-default">Navigation Functionality------>Contains------>TC25,TC26.User should be able to scroll up and down using page navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='103' id='104'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Products Functionality -------->Contains TC8,TC9, TC21.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='110' id='111'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Register User ------------> Contains------------>TC1, TC5.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='117' id='118'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">--------------->Contains------------>TC7.User should be on Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">13 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:03:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:04:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='27'>User should be able to view brands on the left side panel and choose different brands</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='39' id='40'>User is able to add products to cart</a>
+<div class="">
+<span class="badge badge-default">Cart Functionality------------>Contains---------->TC12,TC13,TC17,TC20,TC22.User is able to add products to cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='49'>The user should see the category panel on left side of the page and can choose different categories</a>
+<div class="">
+<span class="badge badge-default">Category Functionality'-------->Contains ------->TC18.The user should see the category panel on left side of the page and can choose different categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:05:49 pm</td>
+<td>
+<a href="#" class="linked" test-id='60' id='61'>User is able to add products to cart and checkout</a>
+<div class="">
+<span class="badge badge-default">Checkout Functionality---------->Contains------->TC14,TC15,TC16,TC23,TC24.User is able to add products to cart and checkout</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='68'>User is able to submit the contact us for successfully</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:06:06 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='77'>User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:20 pm</td>
+<td>
+<a href="#" class="linked" test-id='86' id='87'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality ------------>contains-------------->TC2, TC3, TC4.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='93' id='94'>User should be able to scroll up and down using page navigation</a>
+<div class="">
+<span class="badge badge-default">Navigation Functionality------>Contains------>TC25,TC26.User should be able to scroll up and down using page navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='103' id='104'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Products Functionality -------->Contains TC8,TC9, TC21.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='110' id='111'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">Register User ------------> Contains------------>TC1, TC5.User should be on Home page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:06:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='117' id='118'>User should be on Home page</a>
+<div class="">
+<span class="badge badge-default">--------------->Contains------------>TC7.User should be on Home page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:03:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Then I should see brand name from sheet name "Sheet1" and row number "0" in the heading</a>
+<div class="">
+<span class="badge badge-default">Brand Functionality-------->Contains----->TC19.User should be able to view brands on the left side panel and choose different brands.Then I should see brand name from sheet name "Sheet1" and row number "0" in the heading</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:34 pm</td>
+<td>
+<a href="#" class="linked" test-id='39' id='46'>Then I am able to see the right products with product name , price , quantity and total price in the cart</a>
+<div class="">
+<span class="badge badge-default">Cart Functionality------------>Contains---------->TC12,TC13,TC17,TC20,TC22.User is able to add products to cart.Then I am able to see the right products with product name , price , quantity and total price in the cart</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:05:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='48' id='55'>Then I should see "WOMEN - DRESS PRODUCTS" in the heading</a>
+<div class="">
+<span class="badge badge-default">Category Functionality'-------->Contains ------->TC18.The user should see the category panel on left side of the page and can choose different categories.Then I should see "WOMEN - DRESS PRODUCTS" in the heading</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:06:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='75'>Then I can view "Home" tab is selected</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully.Then I can view "Home" tab is selected</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:06:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='67' id='84'>Then I can view "Home" tab is selected</a>
+<div class="">
+<span class="badge badge-default">Contact Us Functionality--------------->Contains-------->TC6.User is able to submit the contact us for successfully using "ROBOT" class to "UPLOAD".Then I can view "Home" tab is selected</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
